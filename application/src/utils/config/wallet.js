@@ -1,5 +1,5 @@
 const path = require("path");
-const logger = require("@navin3d/log");
+const logger = require("slf3d");
 const { Wallets } = require('fabric-network');
 const walletPath = path.join(__dirname, '../wallet');
 

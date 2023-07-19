@@ -3,7 +3,7 @@ const cors            = require("cors");
 const YAML            = require('yamljs');
 const express         = require("express");
 const bodyParser      = require("body-parser");
-const logger          = require("@navin3d/log");
+const logger          = require("slf3d");
 const swaggerUi       = require('swagger-ui-express');
 
 const { PORT }        = require("./utils/config");

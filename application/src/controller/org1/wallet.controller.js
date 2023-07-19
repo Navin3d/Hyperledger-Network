@@ -1,4 +1,4 @@
-const logger                              = require("@navin3d/log");
+const logger                              = require("slf3d");
 
 const walletService                       = require("../../services/wallet.service");
 const { getCAClientOrg1 }                 = require("../../utils/config/ca-client");

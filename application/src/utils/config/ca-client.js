@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const FabricCAServices = require('fabric-ca-client');
 const { CAHOSTORG1, CAHOSTORG2 } = require("./index");
-const logger = require("@navin3d/log");
+const logger = require("slf3d");
 
 
 const getCCORG1 = () => {

@@ -1,4 +1,4 @@
-const logger = require('@navin3d/log');
+const logger = require('slf3d');
 const { Gateway } = require('fabric-network');
 
 const getWallet = require('../utils/config/wallet');
