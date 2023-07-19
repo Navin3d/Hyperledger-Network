@@ -1,0 +1,28 @@
+{
+  "name": "comprehensivesmartcontract",
+  "version": "1.0.0",
+  "description": "This is an application to intract with Hyperledger chin code.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "nodemon ./src/index.js"
+  },
+  "keywords": [
+    "Hyperledger",
+    "ChainCode",
+    "Javascript"
+  ],
+  "author": "Navin3d",
+  "license": "ISC",
+  "dependencies": {
+    "@navin3d/log": "^0.1.4",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "fabric-ca-client": "^2.2.18",
+    "fabric-network": "^2.2.18",
+    "nodemon": "^2.0.22",
+    "swagger-ui-express": "^5.0.0",
+    "yamljs": "^0.3.0"
+  }
+}

@@ -1,0 +1,262 @@
+openapi: 3.0.0
+info:
+  title: Comprehensive Smart Contract
+  version: 1.0.0
+paths:
+  /org1/contract/get/{userId}:
+    get:
+      summary: Get asset in contract by userId.
+      parameters:
+        - in: path                    # Specify the parameter location as "path"
+          name: userId                # Specify the parameter name
+          schema:
+            type: string              # Specify the data type of the parameter
+          required: true              # Specify if the parameter is required
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+  /org1/contract/get/{userId}/{documentId}:
+    get:
+      summary: Get asset in contract by userId.
+      parameters:
+        - in: path                    # Specify the parameter location as "path"
+          name: userId                # Specify the parameter name
+          schema:
+            type: string              # Specify the data type of the parameter
+          required: true              # Specify if the parameter is required
+
+        - in: path                    # Specify the parameter location as "path"
+          name: documentId            # Specify the parameter name
+          schema:
+            type: string              # Specify the data type of the parameter
+          required: true              # Specify if the parameter is required
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+  /org1/contract:
+    post:
+      summary: create or update asset in chain.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                documentId:
+                  type: string
+                documentString:
+                  type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+  /org1/wallet/admin:
+    post:
+      summary: Create a wallet admin.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                orgMspId:
+                  type: string
+                walletAdminUserId:
+                  type: string
+                walletAdminUserPassword:
+                  type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+              
+  /org1/wallet/user:
+    post:
+      summary: Create a wallet user.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                orgMspId:
+                  type: string
+                walletAdminUserId:
+                  type: string
+                userId:
+                  type: string
+                affiliation:
+                  type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+  /org2/contract/get/{userId}:
+    get:
+      summary: Get asset in contract by userId.
+      parameters:
+        - in: path                    # Specify the parameter location as "path"
+          name: userId                # Specify the parameter name
+          schema:
+            type: string              # Specify the data type of the parameter
+          required: true              # Specify if the parameter is required
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+  /org2/contract/get/{userId}/{documentId}:
+    get:
+      summary: Get asset in contract by userId.
+      parameters:
+        - in: path                    # Specify the parameter location as "path"
+          name: userId                # Specify the parameter name
+          schema:
+            type: string              # Specify the data type of the parameter
+          required: true              # Specify if the parameter is required
+
+        - in: path                    # Specify the parameter location as "path"
+          name: documentId            # Specify the parameter name
+          schema:
+            type: string              # Specify the data type of the parameter
+          required: true              # Specify if the parameter is required
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+  /org2/contract:
+    post:
+      summary: create or update asset in chain.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                documentId:
+                  type: string
+                documentString:
+                  type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+  /org2/wallet/admin:
+    post:
+      summary: Create a wallet admin.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                orgMspId:
+                  type: string
+                walletAdminUserId:
+                  type: string
+                walletAdminUserPassword:
+                  type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+              
+  /org2/wallet/user:
+    post:
+      summary: Create a wallet user.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                orgMspId:
+                  type: string
+                walletAdminUserId:
+                  type: string
+                userId:
+                  type: string
+                affiliation:
+                  type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
