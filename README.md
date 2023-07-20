@@ -9,6 +9,7 @@ This is an standalone hyperledger fabric application that has an comprehensive c
 ```
 git submodule init
 git submodule update
+git push --recurse-submodules=on-demand
 ```
 
 # To Run:
