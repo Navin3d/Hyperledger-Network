@@ -19,3 +19,13 @@ This is an standalone hyperledger fabric application that has an comprehensive c
 npm i
 npm start
 ```
+
+# Additional Commands
+- To Stop the application
+```
+npx kill-port 3000
+```
+- To start server in background
+```
+2>&1 &
+```
