@@ -5,6 +5,12 @@ This is an standalone hyperledger fabric application that has an comprehensive c
 - Docker
 - Node.js
 
+# Before Start:
+```
+git submodule init
+git submodule update
+```
+
 # To Run:
 - Command to bring the network Up. 
 ```bash
