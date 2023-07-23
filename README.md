@@ -5,14 +5,21 @@ This is an standalone hyperledger fabric application that has an comprehensive c
 - Docker
 - Node.js
 
-# Before Start:
+# How to run:
+- Initialize the network binaries based on ur operating system (Linux/Ubuntu/Mac) with the command.
+```bash
+node init.js
 ```
-git submodule init
-git submodule update
-git push --recurse-submodules=on-demand
+- This project includes an Comprehensive Chaincode which can cover upto 99% of your business use cases with an application to intract with the Comprehensive Chaincode the apis have an swagger documentation available in the endpoint */docs* to do start application ,deploy chaincode and setup network just run start.js.
+```bash
+node start.js
+```
+- To down the network and clear cache run this command.
+```bash
+node stop.js
 ```
 
-# To Run:
+# Useful Commands:
 - Command to bring the network Up. 
 ```bash
 ./network.sh up createChannel -ca

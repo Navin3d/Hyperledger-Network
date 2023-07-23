@@ -13,7 +13,12 @@ system-genesis-block/*
 *.tar.gz
 log.txt
 
+bin/
+config/
+builders/
+
 application/node_modules
+application/src/utils/wallet
 chaincode/node_modules
 
 # Logs
