@@ -3,9 +3,11 @@ const { exec } = require('child_process');
 const commands = [
     "rm stop.log",
     './network.sh down >> stop.log && echo "Network is down..."',
+    "cd explorer && docker compose down -v",
     'cd application && npx kill-port 3000 >> ../stop.log && echo "Application is down..."',
     "node clean.js >> stop.log && echo OK",
     "rm -r ./application/src/utils/wallet",
+    "rm -r ./chaincode/go/vendor",
 ];
 
 const executeCommand = (command) => {

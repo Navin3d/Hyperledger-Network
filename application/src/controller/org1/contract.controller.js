@@ -24,7 +24,7 @@ const saveAssetORG1 = async (req, res) => {
             data    : result,
         });
     } catch(err) {
-        logger.error(err);
+        logger.error(err.message);
 
         return res.status(500).json({
             message : "Failed to create asset...",
@@ -53,7 +53,7 @@ const getAssetByAssetIdORG1 = async (req, res) => {
             data    : result,
         });
     } catch(err) {
-        logger.error(err);
+        logger.error(err.message);
 
         return res.status(500).json({
             message : "Failed to fetch asset...",
@@ -82,7 +82,7 @@ const getAssetByUserIdORG1 = async (req, res) => {
             data    : result,
         });
     } catch(err) {
-        logger.error(err);
+        logger.error(err.message);
 
         return res.status(500).json({
             message : "Failed to fetch asset...",

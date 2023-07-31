@@ -4,11 +4,13 @@ const commands = [
     "rm start.log",
     "node stop.js >> start.log && echo OK",
     "./network.sh up createChannel -ca >> start.log && echo OK",
-    "cd addOrg3 && ./addOrg3.sh up -ca >> start.log && echo OK",
-    "./network.sh deployCC -ccn ComprehensiveSmartContract -ccp ./chaincode -ccl javascript >> start.log && echo OK",
+    // "cd addOrg3 && ./addOrg3.sh up -ca -c mychannel >> start.log && echo OK",
+    // "cd explorer && docker compose up -d",
+    // "./network.sh deployCC -ccn ComprehensiveSmartContract -ccp ./chaincode/js -ccl javascript >> start.log && echo OK",
+    "./network.sh deployCC -ccn ComprehensiveSmartContract -ccp ./chaincode/go -ccl go >> start.log && echo OK",
     "cd application && npm i >> ../start.log && echo OK",
     // 'cd application && npx kill-port 3000 >> ../stop.log && echo "Application is down..."',
-    "cd application && npm start >> ../start.log &",
+    "cd application && npm test >> ../start.log &",
 ];
 
 const executeCommand = (command) => {

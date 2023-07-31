@@ -86,7 +86,7 @@ const getAssetByAssetId = async (ccp, userId, assetId) => {
         asset = await contract.evaluateTransaction('ReadAsset', assetId);
         logger.log(`Successfuly fetched the assets`);
     } catch (e) {
-        logger.error(e.message);
+        logger.log(e.message);
         throw e;
     } finally {
         gateway.disconnect();
